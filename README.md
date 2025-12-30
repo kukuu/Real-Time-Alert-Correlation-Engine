@@ -679,6 +679,57 @@ le-alert-correlation-system/
 └── 🔹 CHANGELOG.md
 ```
 
+
+- Frontend updated
+```
+frontend/
+├── public/
+│   ├── index.html
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   └── LoadingSpinner.tsx
+│   │   └── layout/
+│   │       ├── Header.tsx
+│   │       ├── Sidebar.tsx
+│   │       └── ProtectedRoute.tsx
+│   ├── contexts/
+│   │   ├── AuthContext.tsx
+│   │   └── AlertContext.tsx
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   └── useWebSocket.ts
+│   ├── pages/
+│   │   ├── Login.tsx
+│   │   ├── DashboardPage.tsx
+│   │   ├── AlertsPage.tsx
+│   │   ├── IncidentsPage.tsx
+│   │   └── MapPage.tsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── theme.tsx
+│   ├── types/
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── constants.ts
+│   │   └── formatters.ts
+│   ├── App.tsx
+│   └── index.tsx
+├── scripts/
+│   └── start-dev.sh
+├── .env
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+```
 ## Key Integration Points
 This integrated architecture ensures seamless data flow between Java backend services and the React frontend, with proper security, scalability, and real-time capabilities throughout the system.
 ### HTTP API Integration:
