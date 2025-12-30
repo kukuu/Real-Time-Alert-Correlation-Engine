@@ -278,54 +278,7 @@
 ## Folder Structure
 
 ```
-frontend/
-├── public/
-│   ├── index.html
-│   └── vite.svg
-├── src/
-│   ├── components/
-│   │   ├── common/
-│   │   │   └── LoadingSpinner.tsx
-│   │   └── layout/
-│   │       ├── Header.tsx
-│   │       ├── Sidebar.tsx
-│   │       └── ProtectedRoute.tsx
-│   ├── contexts/
-│   │   ├── AuthContext.tsx
-│   │   └── AlertContext.tsx
-│   ├── hooks/
-│   │   ├── useAuth.ts
-│   │   └── useWebSocket.ts
-│   ├── pages/
-│   │   ├── Login.tsx
-│   │   ├── DashboardPage.tsx
-│   │   ├── AlertsPage.tsx
-│   │   ├── IncidentsPage.tsx
-│   │   └── MapPage.tsx
-│   ├── styles/
-│   │   ├── global.css
-│   │   └── theme.tsx
-│   ├── types/
-│   │   └── index.ts
-│   ├── utils/
-│   │   ├── constants.ts
-│   │   └── formatters.ts
-│   ├── App.tsx
-│   └── index.tsx
-├── scripts/
-│   └── start-dev.sh
-├── .env
-├── .env.example
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── tailwind.config.js
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
-<!--le-alert-correlation-system/
+le-alert-correlation-system/
 ├── 📁 .github/
 │   ├── 📁 workflows/
 │   │   ├── 🔹 frontend-ci.yml
@@ -723,7 +676,7 @@ frontend/
 ├── 🔹 CODE_OF_CONDUCT.md
 ├── 🔹 docker-compose.yml           # Local development
 ├── 🔹 Makefile                     # Common commands
-└── 🔹 CHANGELOG.md-->
+└── 🔹 CHANGELOG.md
 ```
 
 ## Key Integration Points
