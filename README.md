@@ -743,3 +743,4 @@ React ← HTTP/WebSocket → Backend Services
 
 ## Code Repository 
 - https://github.com/kukuu/JAVA/tree/main (**PRIVATE**)
+- <!--https://chat.deepseek.com/a/chat/s/f156cf53-1c7f-4238-a9b5-100a68bb79d8-->
