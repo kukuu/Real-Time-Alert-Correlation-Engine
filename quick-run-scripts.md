@@ -67,7 +67,7 @@ trap "echo 'Stopping services...'; kill $BACKEND_PID $FRONTEND_PID; docker-compo
 wait
 ```
 
-## How to Run /frontend
+## How to Run:  /frontend
 
 ```
 # 1. Navigate to frontend directory
