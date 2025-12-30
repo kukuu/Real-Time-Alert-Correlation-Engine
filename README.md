@@ -3,6 +3,28 @@
 
  The system is designed for high availability, scalability, and maintainability, suitable for law enforcement and critical incident management scenarios.
 
+ ## Features
+
+ - Authentication with mock login
+
+- Routing with protected routes
+
+- Dashboard with stats
+
+- Alerts page with table
+
+- Map page with Leaflet integration
+
+- Incidents page
+
+- Responsive design with Tailwind CSS
+
+- TypeScript for type safety
+
+- React Query for data fetching
+
+- Context API for state management
+
  ## #Data Flow Summary: Java Backend to React Frontend
 
  ### Implementation overview
