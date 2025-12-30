@@ -25,7 +25,7 @@
 
 - Context API for state management
 
- ## #Data Flow Summary: Java Backend to React Frontend
+ ## Data Flow Summary: Java Backend to React Frontend
 
  ### Implementation overview
  This implementation provides:
