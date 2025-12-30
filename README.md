@@ -7,7 +7,7 @@
 
  - Authentication with mock login
 
-- Routing with protected routes
+- Routing with protected routes 
 
 - Dashboard with stats
 
