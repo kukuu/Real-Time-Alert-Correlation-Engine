@@ -689,3 +689,5 @@ React ← HTTP/WebSocket → Backend Services
 • Offline support with IndexedDB
 • Conflict resolution on reconnection
 ```
+## Code Repository 
+**PRIVATE**
