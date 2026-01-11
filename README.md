@@ -3,7 +3,7 @@
 
  The system is designed for high availability, scalability, and maintainability, suitable for law enforcement and critical incident management scenarios.  
 
- ## Features
+ ## Features 
 
  - Authentication with mock login
 
