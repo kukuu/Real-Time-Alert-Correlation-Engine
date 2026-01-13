@@ -12,7 +12,7 @@
 - Dashboard with stats
 
 - Alerts page with table
-
+ 
 - Map page with Leaflet integration
 
 - Incidents page
