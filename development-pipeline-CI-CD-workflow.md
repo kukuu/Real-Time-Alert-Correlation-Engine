@@ -133,3 +133,24 @@ Rollback Triggers:
 ```
 
 ### 🔗 CRITICAL DEPENDENCIES & ORDER
+
+- Infrastructure Dependencies:
+```
+
+1. Database Layer (MongoDB + PostgreSQL)
+   ↓
+2. Message Bus (Zookeeper → Kafka → Schema Registry)
+   ↓
+3. Service Discovery (Eureka)
+   ↓
+4. Configuration Server
+   ↓
+5. Backend Services (Alert → Correlation Engine)
+   ↓
+6. API Gateway
+   ↓
+7. Frontend
+   ↓
+8. Monitoring Stack
+
+```
