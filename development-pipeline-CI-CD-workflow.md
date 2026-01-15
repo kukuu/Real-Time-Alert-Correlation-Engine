@@ -28,5 +28,16 @@ Dependencies: Docker, Node.js 18+, Java 17+, Maven/Gradle
 Outcome: Full local stack running with hot-reload
 ```
 
+- Phase 2: Feature Development
+  - Frontend Features: React components + Tailwind CSS
+  - Backend Features: Spring Boot/Quarkus microservices
+  - Database Migrations: Version-controlled SQL scripts
+  - Kafka Schemas: AVRO schemas in registry
+  - Integration: Service-to-service communication testing
+ 
+  ```
+  Branch Strategy: Git Flow
+  Feature → Develop → Release → Main
+```
 
 
