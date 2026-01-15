@@ -4,6 +4,8 @@
 
 ![image](https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/le-snapsots/le-1.png)
 
+![image]()
+
 ### 📊 SYSTEM ARCHITECTURE OVERVIEW
 
 - Core Components:
