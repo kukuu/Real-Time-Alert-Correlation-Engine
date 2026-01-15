@@ -2,7 +2,7 @@
 
 ## Law Enforcement Real-Time Alert Correlation System.
 
-📊 **SYSTEM ARCHITECTURE OVERVIEW**
+### 📊 SYSTEM ARCHITECTURE OVERVIEW
 
 - Core Components:
   - Frontend - React app (Port 3000)
@@ -14,4 +14,6 @@
   - Service Discovery - Eureka
   - Configuration - Spring Config Server
 
-🔧 **DEVELOPMENT PIPELINE (SDLC)**
+### 🔧 **DEVELOPMENT PIPELINE (SDLC)**
+
+ - Phase 1: Local Development
