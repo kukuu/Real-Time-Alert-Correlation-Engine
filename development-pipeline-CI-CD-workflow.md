@@ -85,3 +85,51 @@ Steps:
   5. Kafka topic/consumer testing
   6. Cross-service authentication/authorization
 ```
+- Stage 4: Security & Compliance (Critical for LE)
+```
+Mandatory Checks:
+  - FIPS 140-2 compliance (crypto libraries)
+  - CJIS compliance validation
+  - PII data handling audit
+  - Audit trail generation testing
+  - Role-Based Access Control (RBAC) testing
+  - Data encryption at rest/in transit
+```
+- Stage 5: Staging Deployment
+
+```
+
+Infrastructure: Kubernetes (EKS/GKE) or Docker Swarm
+Steps:
+  1. Database migration (Flyway/Liquibase)
+  2. Configuration rollout (Config Server)
+  3. Canary deployment (5% traffic)
+  4. Health checks (Spring Actuator/Quarkus Health)
+  5. Service discovery registration
+  6. Kafka consumer group rebalancing
+```
+
+- Stage 6: Monitoring & Rollback
+
+```
+Monitoring Stack:
+  - Prometheus: Metrics collection
+  - Grafana: Dashboards (Alert rates, correlation effectiveness)
+  - Jaeger: Distributed tracing
+  - ELK Stack: Log aggregation
+
+Alerts:
+  - High false positive rates
+  - Alert processing delays > SLA
+  - Database connection issues
+  - Kafka lag > threshold
+  - Authentication failures
+
+Rollback Triggers:
+  - API error rate > 1%
+  - 95th percentile latency > 2s
+  - Memory leak detection
+  - Security vulnerability detected
+```
+
+### 🔗 CRITICAL DEPENDENCIES & ORDER
