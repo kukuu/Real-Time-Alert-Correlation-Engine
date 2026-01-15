@@ -156,7 +156,7 @@ Rollback Triggers:
 ```
 
 - Flow
-  ```
+```
 
 1. Frontend
    ↓
