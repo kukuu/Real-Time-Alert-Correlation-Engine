@@ -2,6 +2,8 @@
 
 ## Law Enforcement Real-Time Alert Correlation System.
 
+![image]()
+
 ### 📊 SYSTEM ARCHITECTURE OVERVIEW
 
 - Core Components:
