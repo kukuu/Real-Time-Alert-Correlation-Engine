@@ -175,3 +175,4 @@ Rollback Triggers:
 8. Monitoring Stack 
 
 ```
+- Data Flow Dependencies:
