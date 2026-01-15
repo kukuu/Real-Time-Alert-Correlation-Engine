@@ -2,7 +2,7 @@
 
 ## Law Enforcement Real-Time Alert Correlation System.
 
-![image]()
+![image](https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/le-snapsots/le-1.png)
 
 ### 📊 SYSTEM ARCHITECTURE OVERVIEW
 
