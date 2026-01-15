@@ -17,10 +17,10 @@
 ### 🔧 **DEVELOPMENT PIPELINE (SDLC)**
 
  - Phase 1: Local Development
-  - Frontend: docker-compose up frontend (Vite dev server)
-  - Backend: Services built with Docker Compose
-  - Database: Pre-initialized with law enforcement schemas
-  - Message Queue: Kafka topics auto-created
+   - Frontend: docker-compose up frontend (Vite dev server)
+   - Backend: Services built with Docker Compose
+   - Database: Pre-initialized with law enforcement schemas
+   -  Message Queue: Kafka topics auto-created
 
 ```
 Dependencies: Docker, Node.js 18+, Java 17+, Maven/Gradle
