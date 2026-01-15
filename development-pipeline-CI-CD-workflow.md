@@ -60,3 +60,17 @@ Checks:
   - License compliance (FOSSA)
 ```
 
+- Stage 2: Build & Unit Testing
+```
+Frontend Build:
+  - npm ci --cache .npm --prefer-offline
+  - npm run lint
+  - npm run test:unit
+  - npm run build (Vite production build)
+  - Docker build (multi-stage)
+
+Backend Build (per service):
+  - mvn clean compile / gradle build
+  - Unit tests with coverage (>80%)
+  - Docker build with JVM optimizations
+```
