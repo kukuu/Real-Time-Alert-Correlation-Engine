@@ -3,6 +3,7 @@
 
  This system is designed for high availability, scalability, and maintainability, suitable for law enforcement (LE) and critical incident management (CIM) scenarios.  
 
+
  ![image](https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/le-snapsots/le-1.png)
 
 ![image](https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/le-snapsots/le-2.png)
@@ -13,6 +14,15 @@
 
 ![image](https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/le-snapsots/le-5.png)
 
+  ### ⚠️ LAW ENFORCEMENT SPECIFIC CONSIDERATIONS
+
+- Critical Requirements:
+  - Data Sovereignty: LE data must not leave jurisdiction
+  - Chain of Custody: Complete audit trail for all alerts
+  - Access Control: Multi-factor authentication + RBAC
+  - Data Retention: Specific periods for different alert types
+  - Emergency Override: Manual intervention capabilities
+ 
  ## Development Pipeline and CI/CD Workflow
 
  https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/development-pipeline-CI-CD-workflow.md
