@@ -74,3 +74,14 @@ Backend Build (per service):
   - Unit tests with coverage (>80%)
   - Docker build with JVM optimizations
 ```
+- Stage 3: Integration Testing
+```
+Environment: Docker Compose Test Environment
+Steps:
+  1. Start all dependencies (DB, Kafka, Redis)
+  2. Run service integration tests
+  3. API contract testing (Pact)
+  4. Database migration validation
+  5. Kafka topic/consumer testing
+  6. Cross-service authentication/authorization
+```
