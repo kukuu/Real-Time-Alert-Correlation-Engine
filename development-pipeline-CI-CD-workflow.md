@@ -39,5 +39,10 @@ Outcome: Full local stack running with hot-reload
   Branch Strategy: Git Flow
   Feature → Develop → Release → Main
 ```
-
+- Phase 3: Testing Strategy
+  - Unit Tests: Jest (Frontend), JUnit (Backend)
+  - Integration: TestContainers for Docker dependencies
+  - E2E: Cypress for frontend, Karate for API
+  - Security: OWASP ZAP, SonarQube
+  - Performance: Gatling/K6 load testing
 
