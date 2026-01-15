@@ -151,6 +151,27 @@ Rollback Triggers:
    ↓
 7. Frontend
    ↓
-8. Monitoring Stack
+8. Monitoring Stack 
+
+```
+
+- Flow
+  ```
+
+1. Frontend
+   ↓
+2. API Gateway 
+   ↓
+3.  Backend Services (Alert → Correlation Engine) S
+   ↓
+4. Configuration Server
+   ↓
+5. Service Discovery (Eureka)
+   ↓
+6. Message Bus (Zookeeper → Kafka → Schema Registry)
+   ↓
+7. Database Layer (MongoDB + PostgreSQL)
+   ↓
+8. Monitoring Stack 
 
 ```
