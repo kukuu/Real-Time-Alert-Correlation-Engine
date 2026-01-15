@@ -706,6 +706,14 @@ React ← HTTP/WebSocket → Backend Services
 
 - Alerting: PagerDuty integration for critical incidents
 
+
+## Deployment Constraints:
+- On-premise deployment often required
+- Air-gapped environments possible
+- Strict change management procedures
+- Mandatory penetration testing pre-deployment
+- LE personnel security clearance for operations
+
 ## Code Repository 
 - https://github.com/kukuu/JAVA/tree/main (**PRIVATE**)
-<!--https://chat.deepseek.com/a/chat/s/f156cf53-1c7f-4238-a9b5-100a68bb79d8-->
+
