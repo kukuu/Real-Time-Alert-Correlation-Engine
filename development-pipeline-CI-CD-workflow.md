@@ -47,3 +47,16 @@ Feature → Develop → Release → Main
   - Performance: Gatling/K6 load testing
 
 ### 🔄 CI/CD PIPELINE
+
+- Stage 1: Code Commit & Validation
+```
+Trigger: Git push to feature branch
+Tools: GitHub Actions / GitLab CI / Jenkins
+Checks:
+  - SAST (SonarQube)
+  - Secret scanning (GitGuardian)
+  - Code formatting (Prettier/Checkstyle)
+  - Dependency scanning (OWASP Dependency-Check)
+  - License compliance (FOSSA)
+```
+
