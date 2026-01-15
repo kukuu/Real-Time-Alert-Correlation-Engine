@@ -35,9 +35,9 @@ Outcome: Full local stack running with hot-reload
   - Kafka Schemas: AVRO schemas in registry
   - Integration: Service-to-service communication testing
  
-  ```
-  Branch Strategy: Git Flow
-  Feature → Develop → Release → Main
+```
+Branch Strategy: Git Flow
+Feature → Develop → Release → Main
 ```
 - Phase 3: Testing Strategy
   - Unit Tests: Jest (Frontend), JUnit (Backend)
