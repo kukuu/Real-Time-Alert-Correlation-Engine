@@ -176,3 +176,13 @@ Rollback Triggers:
 
 ```
 - Data Flow Dependencies:
+
+```
+Law Enforcement Data Sources → 
+Alert Service (Ingestion) → 
+Kafka (Event Streaming) → 
+Correlation Engine (Processing) → 
+MongoDB (Alert Storage) → 
+Frontend (Visualization) → 
+Audit Trail (PostgreSQL)
+```
