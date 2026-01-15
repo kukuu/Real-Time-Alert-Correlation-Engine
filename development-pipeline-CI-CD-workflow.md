@@ -209,11 +209,4 @@ Audit Trail (PostgreSQL)
   - Compliance reporting for regulatory requirements
   - Performance SLA metrics (99.9% uptime, <1s processing)
 
-### ⚠️ LAW ENFORCEMENT SPECIFIC CONSIDERATIONS
 
-- Critical Requirements:
-  - Data Sovereignty: LE data must not leave jurisdiction
-  - Chain of Custody: Complete audit trail for all alerts
-  - Access Control: Multi-factor authentication + RBAC
-  - Data Retention: Specific periods for different alert types
-  - Emergency Override: Manual intervention capabilities
