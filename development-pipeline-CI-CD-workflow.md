@@ -21,6 +21,7 @@
    - Backend: Services built with Docker Compose
    - Database: Pre-initialized with law enforcement schemas
    -  Message Queue: Kafka topics auto-created
+   -  Testing: Unit tests run before container startup
 
 ```
 Dependencies: Docker, Node.js 18+, Java 17+, Maven/Gradle
@@ -28,4 +29,4 @@ Outcome: Full local stack running with hot-reload
 ```
 
 
-Testing: Unit tests run before container startup
+
