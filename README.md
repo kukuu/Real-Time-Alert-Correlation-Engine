@@ -147,7 +147,9 @@ https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/architectu
     • Reporting → BI tools (Tableau, PowerBI)
     • Archival → Cold storage (S3 Glacier)
 ```
+## Folder Structure
 
+https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/folder-structure.md
 
 ## Key Integration Points
 This integrated architecture ensures seamless data flow between Java backend services and the React frontend, with proper security, scalability, and real-time capabilities throughout the system.
