@@ -3,6 +3,10 @@
 
  This system is designed for high availability, scalability, and maintainability, suitable for law enforcement (LE) and critical incident management (CIM) scenarios.  
 
+ ## Development Pipeline and CI/CD Workflow
+
+ https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/development-pipeline-CI-CD-workflow.md
+
  ## Features 
 
  - Authentication with mock login
