@@ -46,3 +46,4 @@ Feature → Develop → Release → Main
   - Security: OWASP ZAP, SonarQube
   - Performance: Gatling/K6 load testing
 
+### 🔄 CI/CD PIPELINE
