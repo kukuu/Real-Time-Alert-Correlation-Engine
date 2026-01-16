@@ -41,7 +41,7 @@
 
 - Incidents page
 
-- Responsive design with Tailwind CSS
+- Responsive design (with Tailwind CSS)
 
 - TypeScript for type safety
 
