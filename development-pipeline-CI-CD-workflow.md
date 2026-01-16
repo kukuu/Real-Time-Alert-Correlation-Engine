@@ -162,7 +162,7 @@ Rollback Triggers:
    ↓
 2. API Gateway 
    ↓
-3.  Backend Services (Alert → Correlation Engine) S
+3.  Backend Services (Alert → Correlation Engine) 
    ↓
 4. Configuration Server
    ↓
