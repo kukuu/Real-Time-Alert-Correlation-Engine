@@ -29,7 +29,7 @@
 
  ## Features 
 
- - Authentication with mock login
+ - Authentication (with mock login)
 
 - Routing with protected routes 
 
