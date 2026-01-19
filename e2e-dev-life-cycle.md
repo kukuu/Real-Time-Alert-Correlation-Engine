@@ -197,3 +197,24 @@ backend/
 │   └── data.sql             # Initial data`
 
 ```
+application.yml example:
+
+```
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/le_alerts
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+server:
+  port: 8080
+  
+security:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration: 86400000
+```
