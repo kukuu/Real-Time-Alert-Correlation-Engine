@@ -145,3 +145,19 @@ App.tsx
 │       └── MapPage.tsx
 
 ```
+### Phase 4: Integration & Data Flow
+**4.1 API Communication**
+```
+// alertService.ts
+const alertService = {
+  // HTTP Requests
+  getAlerts: () => axios.get(`${API_URL}/alerts`),
+  createAlert: (alert) => axios.post(`${API_URL}/alerts`, alert),
+  
+  // WebSocket
+  subscribeToAlerts: (callback) => {
+    const ws = new WebSocket(WS_URL);
+    ws.onmessage = (event) => callback(JSON.parse(event.data));
+  }
+};
+```
