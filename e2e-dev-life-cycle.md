@@ -197,7 +197,7 @@ backend/
 │   └── data.sql             # Initial data`
 
 ```
-application.yml example:
+_application.yml example:_
 
 ```
 
