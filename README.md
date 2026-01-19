@@ -32,7 +32,10 @@ To mitigate risks and plan for growth, the architecture includes safeguards such
   - Data Retention: Specific periods for different alert types
   - Emergency Override: Manual intervention capabilities
  
- ## Development Pipeline and CI/CD Workflow
+ # End-to-End Software Development Cycle 
+ 
+ 
+ ## CI/CD Workflow
 
  https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/development-pipeline-CI-CD-workflow.md
 
