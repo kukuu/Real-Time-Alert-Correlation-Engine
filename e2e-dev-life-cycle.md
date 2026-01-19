@@ -2,7 +2,7 @@
 
 LE Alert Correlation System
 
-1. Technology Stack
+## Technology Stack
 
 **Backend (Java)**
  - Framework: Spring Boot 3.x
@@ -34,3 +34,31 @@ LE Alert Correlation System
 **Monitoring: Prometheus + Grafana (future)**
 - Logging: ELK Stack (future)
 
+## 2. Development Cycle Sequence
+- Phase 1: Project Initialization
+
+```
+# Backend Initialization
+mvn archetype:generate \
+  -DgroupId=com.le \
+  -DartifactId=real-time-alert-correlation-engine \
+  -DarchetypeArtifactId=maven-archetype-quickstart \
+  -DinteractiveMode=false
+```
+```
+# Frontend Initialization
+npm create vite@latest frontend -- --template react-ts
+```
+
+- Phase 2: Backend Development Sequence
+2.1 Database & Models Setup
+
+  - Schema Definition (src/main/resources/schema.sql)
+    - Entity Models (src/main/java/com/le/correlation/model/)
+    - Alert.java - Core alert entity
+    - AlertCluster.java - Grouped alerts
+    - CorrelatedIncident.java - Incident entity
+
+  - Repository Layer (Spring Data JPA)
+
+2.2 Service Layer Development
