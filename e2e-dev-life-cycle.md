@@ -51,6 +51,7 @@ npm create vite@latest frontend -- --template react-ts
 ```
 
 - Phase 2: Backend Development Sequence
+
 2.1 Database & Models Setup
 
   - Schema Definition (src/main/resources/schema.sql)
