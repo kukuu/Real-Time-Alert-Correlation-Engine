@@ -63,3 +63,10 @@ npm create vite@latest frontend -- --template react-ts
   - Repository Layer (Spring Data JPA)
 
 2.2 Service Layer Development
+```
+// Execution Sequence:
+1. CorrelationService.java → Main correlation logic
+2. RuleEngine.java → Business rule processing
+3. GeospatialService.java → Location-based correlation
+4. ThreatIntelligenceService.java → External threat data
+```
