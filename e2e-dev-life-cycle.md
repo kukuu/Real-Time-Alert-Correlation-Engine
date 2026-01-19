@@ -182,3 +182,18 @@ Audit Logging → Database Persistence → WebSocket Broadcast
 7. Context Update → AlertContext.setAlerts()
 8. UI Re-render → Components update
 ```
+## 3. Configuration Files
+
+**Backend Configuration**
+
+```
+backend/
+├── pom.xml                    # Maven dependencies
+├── src/main/resources/
+│   ├── application.yml       # Spring configuration
+│   ├── application-dev.yml   # Development config
+│   ├── application-prod.yml  # Production config
+│   ├── schema.sql           # Database schema
+│   └── data.sql             # Initial data`
+
+```
