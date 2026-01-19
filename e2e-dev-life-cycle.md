@@ -35,7 +35,7 @@ LE Alert Correlation System
 - Logging: ELK Stack (future)
 
 ## 2. Development Cycle Sequence
-- Phase 1: Project Initialization
+**- Phase 1: Project Initialization**
 
 ```
 # Backend Initialization
@@ -50,7 +50,7 @@ mvn archetype:generate \
 npm create vite@latest frontend -- --template react-ts
 ```
 
-- Phase 2: Backend Development Sequence
+**- Phase 2: Backend Development Sequence**
 
 2.1 Database & Models Setup
 
