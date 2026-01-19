@@ -131,3 +131,4 @@ VITE_ENVIRONMENT=development
 │   Updates       │    │  (Dashboard.tsx)│    │(DashboardPage.tsx)│
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
+**3.4 Component Hierarchy**
