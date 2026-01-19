@@ -218,3 +218,31 @@ security:
     secret: ${JWT_SECRET}
     expiration: 86400000
 ```
+**Frontend Configuration**
+
+```
+frontend/
+├── vite.config.ts            # Build configuration
+├── tailwind.config.js       # Styling configuration
+├── tsconfig.json           # TypeScript configuration
+├── package.json            # Dependencies & scripts
+└── .env                    # Environment variables
+
+```
+_package.json_
+
+```
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "lint": "eslint . --ext ts,tsx",
+    "start-backend": "cd ../backend && mvn spring-boot:run",
+    "start": "concurrently \"npm run start-backend\" \"npm run dev\""
+  }
+}
+```
+
+## 4. Startup & Execution Scripts
