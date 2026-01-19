@@ -32,7 +32,7 @@ To mitigate risks and plan for growth, the architecture includes safeguards such
   - Data Retention: Specific periods for different alert types
   - Emergency Override: Manual intervention capabilities
  
- # End-to-End Software Development Cycle 
+ ## End-to-End Software Development Cycle 
  
  
  ## CI/CD Workflow
