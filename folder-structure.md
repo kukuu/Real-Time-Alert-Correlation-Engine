@@ -1,6 +1,6 @@
 # Folder Structure
 
-## Phase i
+## Phase 1
 
 ```
 
@@ -88,7 +88,7 @@ le-alert-correlation-system/
 ```
 
 
-## Phase ii
+## Phase 2
 ```
 le-alert-correlation-system/
 ├── 📁 .github/
