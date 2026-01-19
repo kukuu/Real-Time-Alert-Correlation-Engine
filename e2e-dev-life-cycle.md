@@ -161,3 +161,24 @@ const alertService = {
   }
 };
 ```
+**4.2 Middleware Chain (Backend)**
+
+```
+HTTP Request → SecurityFilter → CORSFilter → LoggingFilter → Controller
+         ↓
+Authentication → Authorization → Business Logic → Response
+         ↓
+Audit Logging → Database Persistence → WebSocket Broadcast
+```
+**4.3 Real-time Data Pipeline**
+
+```
+1. New Alert Created → POST /api/alerts
+2. Backend Processes → CorrelationService.correlate()
+3. Database Save → AlertRepository.save()
+4. Kafka Event → alert.created (future)
+5. WebSocket Broadcast → /topic/alerts
+6. Frontend Receives → useWebSocket hook
+7. Context Update → AlertContext.setAlerts()
+8. UI Re-render → Components update
+```
