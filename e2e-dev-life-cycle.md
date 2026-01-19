@@ -132,3 +132,16 @@ VITE_ENVIRONMENT=development
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 **3.4 Component Hierarchy**
+
+```
+App.tsx
+├── ProtectedRoute.tsx
+│   ├── Header.tsx
+│   ├── Sidebar.tsx
+│   └── Page Content
+│       ├── DashboardPage.tsx
+│       ├── AlertsPage.tsx
+│       ├── IncidentsPage.tsx
+│       └── MapPage.tsx
+
+```
