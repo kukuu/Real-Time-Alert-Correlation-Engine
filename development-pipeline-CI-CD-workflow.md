@@ -1,4 +1,4 @@
-# Development Pipeline and CI/CD Workflow 
+# CI/CD Workflow 
 
 ## Law Enforcement Real-Time Alert Correlation System.
 
