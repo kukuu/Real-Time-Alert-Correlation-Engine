@@ -342,3 +342,102 @@ _Message Format:_
 }
 
 ```
+**5.3 Data Models Synchronization**
+
+```
+// types/index.ts (Frontend)
+interface Alert {
+  id: string;
+  source: '911' | 'SENSOR' | 'SOCIAL_MEDIA';
+  priority: 'LOW' | 'MEDIUM' | 'HIGH';
+  category: string;
+  location: {
+    lat: number;
+    lng: number;
+    address: string;
+  };
+  timestamp: string;
+}
+
+// Alert.java (Backend)
+@Entity
+public class Alert {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+    
+    @Enumerated(EnumType.STRING)
+    private AlertSource source;
+    
+    @Enumerated(EnumType.STRING)
+    private Priority priority;
+    
+    private String category;
+    
+    @Embedded
+    private Location location;
+    
+    private Instant timestamp;
+}
+```
+
+## 6. Security Implementation
+
+**6.1 Authentication Flow**
+
+```
+1. Frontend: Login form submission
+2. Backend: Validate credentials → Generate JWT
+3. Frontend: Store token in localStorage (with encryption)
+4. Subsequent requests: Add Authorization header
+5. Backend: Validate JWT on each request
+6. WebSocket: Send token in connection header
+```
+
+**6.2 Security Best Practices**
+```
+// Backend SecurityConfig.java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+    
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http
+            .cors(Customizer.withDefaults())
+            .csrf(AbstractHttpConfigurer::disable)
+            .sessionManagement(session -> session
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/ws/**").permitAll()
+                .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .anyRequest().authenticated())
+            .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+            .build();
+    }
+}
+```
+
+**6.3 Frontend Security**
+```
+// ProtectedRoute.tsx
+const ProtectedRoute = ({ children }: { children: ReactNode }) => {
+  const { isAuthenticated } = useAuth();
+  
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
+  
+  return children;
+};
+
+// HTTP Interceptor for adding tokens
+axios.interceptors.request.use((config) => {
+  const token = localStorage.getItem('auth_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+```
