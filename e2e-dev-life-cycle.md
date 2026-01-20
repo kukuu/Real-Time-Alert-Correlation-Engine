@@ -246,3 +246,27 @@ _package.json_
 ```
 
 ## 4. Startup & Execution Scripts
+
+**4.1 Development Startup**
+
+```
+# Initial setup
+./scripts/setup-dev.sh
+
+```
+```
+# Start both services (using Makefile)
+make dev-start
+```
+```
+# Or manually:
+# Terminal 1: Backend
+cd backend
+mvn spring-boot:run -Dspring.profiles.active=dev
+```
+```
+# Terminal 2: Frontend
+cd frontend
+npm run dev
+
+```
