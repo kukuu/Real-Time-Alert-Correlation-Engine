@@ -2,7 +2,7 @@
  
 This system is designed for high availability, scalability, and maintainability, suitable for law enforcement (LE) and critical incident management (CIM) scenarios. 
 
-The LE Alert Correlation System  consumes multiple Kafka streams (e.g., 911 calls, social media keywords, sensor alerts), uses geospatial libraries to correlate by location, and flags potential critical incidents. 
+The LE Alert Correlation System  consumes multiple Kafka streams (e.g., 911 calls, social media keywords, sensor alerts), uses geospatial libraries to correlate by location, and flags potential critical incidents.  
 
 The  system follows a structured end-to-end development cycle that begins with establishing a secure, real-time communication pipeline between the Java Spring Boot backend and the React TypeScript frontend. The backend is built around a correlation engine that processes alerts through services like `CorrelationService` and `RuleEngine`, while the frontend leverages React Context and custom hooks for state management. Authentication is handled via JWT tokens, with Spring Security on the backend and protected routes on the frontend ensuring that only authorized personnel can access sensitive alert data. The entire flow is initialized through environment-specific configurations, Maven for backend builds, and Vite for frontend tooling, with startup scripts enabling seamless local and production deployment. 
 
