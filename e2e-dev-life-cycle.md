@@ -475,3 +475,20 @@ describe('Dashboard', () => {
 ```
 
 **7.3 Integration Testing**
+
+```
+# Run complete test suite
+make test-all
+```
+```
+# Backend tests
+cd backend && mvn test
+```
+```
+# Frontend tests
+cd frontend && npm test
+```
+```
+# E2E tests
+npm run cypress:open
+```
