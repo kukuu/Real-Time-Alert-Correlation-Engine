@@ -441,3 +441,37 @@ axios.interceptors.request.use((config) => {
   return config;
 });
 ```
+## 7. Testing Strategy
+
+**7.1 Backend Testing**
+```
+@SpringBootTest
+@AutoConfigureMockMvc
+class AlertControllerTest {
+    
+    @Test
+    void createAlert_ValidInput_ReturnsCreated() {
+        AlertDto alertDto = new AlertDto(...);
+        
+        mockMvc.perform(post("/api/alerts")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(alertDto)))
+                .andExpect(status().isCreated());
+    }
+}
+```
+
+**7.2 Frontend Testing**
+```
+// Dashboard.test.tsx
+describe('Dashboard', () => {
+  it('displays alert statistics', async () => {
+    render(<Dashboard />);
+    
+    expect(await screen.findByText('Total Alerts')).toBeInTheDocument();
+    expect(screen.getByText('1,234')).toBeInTheDocument();
+  });
+});
+```
+
+**7.3 Integration Testing**
