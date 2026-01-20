@@ -581,3 +581,13 @@ Security breaches	            |          Critical                |          	Reg
 Frontend state sync issues	     |        Medium	                 |           Implement optimistic updates, offline storage
 
 API rate limiting	               |       Low	                    |           Implement circuit breaker pattern
+
+## 10.2 Operational Risks
+
+- Data Privacy: Ensure PII encryption at rest and in transit
+
+- System Availability: Implement health checks and auto-scaling
+
+- Compliance: Regular audits for law enforcement regulations
+
+- Backup Strategy: Automated database backups with retention policy
