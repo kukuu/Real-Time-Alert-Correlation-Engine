@@ -309,16 +309,16 @@ _Authentication:_
   POST   /api/auth/refresh   → Refresh JWT token
   POST   /api/auth/logout    → Invalidate token
 ```
+_Alerts:_
 ```
-Alerts:
   GET    /api/alerts         → List alerts with filters
   POST   /api/alerts         → Create new alert
   GET    /api/alerts/{id}    → Get specific alert
   PUT    /api/alerts/{id}    → Update alert
   DELETE /api/alerts/{id}    → Delete alert
 ```
+_Incidents:_
 ```
-Incidents:
   GET    /api/incidents      → List correlated incidents
   POST   /api/incidents      → Create incident from alerts
 ```
