@@ -303,6 +303,8 @@ COPY dist/ /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 ## 5. API Contract & Data Flow
+
+**5.1 REST API Endpoints**
 _Authentication:_
 ```
   POST   /api/auth/login     → Login with credentials
@@ -321,4 +323,22 @@ _Incidents:_
 ```
   GET    /api/incidents      → List correlated incidents
   POST   /api/incidents      → Create incident from alerts
+```
+**5.2 WebSocket Channels**
+
+_STOMP Endpoints:_
+```
+  /ws                         → WebSocket connection
+  /app/alerts                 → Send alert updates
+  /topic/alerts               → Subscribe to alerts
+  /topic/incidents            → Subscribe to incidents
+```  
+_Message Format:_
+```
+{
+  "type": "ALERT_CREATED",
+  "payload": {...},
+  "timestamp": "2024-01-15T10:30:00Z"
+}
+
 ```
