@@ -302,3 +302,23 @@ FROM nginx:alpine
 COPY dist/ /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
+## 5. API Contract & Data Flow
+_Authentication:_
+```
+  POST   /api/auth/login     → Login with credentials
+  POST   /api/auth/refresh   → Refresh JWT token
+  POST   /api/auth/logout    → Invalidate token
+```
+```
+Alerts:
+  GET    /api/alerts         → List alerts with filters
+  POST   /api/alerts         → Create new alert
+  GET    /api/alerts/{id}    → Get specific alert
+  PUT    /api/alerts/{id}    → Update alert
+  DELETE /api/alerts/{id}    → Delete alert
+```
+```
+Incidents:
+  GET    /api/incidents      → List correlated incidents
+  POST   /api/incidents      → Create incident from alerts
+```
