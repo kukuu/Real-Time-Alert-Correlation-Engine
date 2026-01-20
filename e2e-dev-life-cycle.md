@@ -492,3 +492,4 @@ cd frontend && npm test
 # E2E tests
 npm run cypress:open
 ```
+## 8. Deployment Pipeline
