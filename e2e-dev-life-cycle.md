@@ -270,3 +270,21 @@ cd frontend
 npm run dev
 
 ```
+**4.2 Production Build**
+
+```
+# Build both applications
+make build-all
+```
+```
+# Backend build
+cd backend
+mvn clean package -DskipTests
+# Output: target/real-time-alert-correlation-engine.jar
+```
+```
+# Frontend build
+cd frontend
+npm run build
+# Output: dist/ directory
+```
