@@ -288,3 +288,17 @@ cd frontend
 npm run build
 # Output: dist/ directory
 ```
+**4.3 Docker Integration**
+```
+# Dockerfile.backend
+FROM openjdk:17-jdk-slim
+COPY target/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+```
+# Dockerfile.frontend
+FROM nginx:alpine
+COPY dist/ /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
+```
