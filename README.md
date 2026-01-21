@@ -34,6 +34,7 @@ To mitigate risks and plan for growth, the architecture includes safeguards such
  
  ## End-to-End Software Development Cycle 
  
+ https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/e2e-dev-life-cycle.md
  
  ## CI/CD Workflow
 
