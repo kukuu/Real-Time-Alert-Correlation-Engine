@@ -274,11 +274,12 @@ React ← HTTP/WebSocket → Backend Services
 
 ## Folder Structure
 
-https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/folder-structure.md
+- https://github.com/kukuu/Real-Time-Alert-Correlation-Engine/blob/main/folder-structure.md
 
 ## KAFKA Integration
+
 - https://github.com/kukuu/KAFKA/blob/main/README.md
-- 
+
 ## Code Repository 
 - https://github.com/kukuu/JAVA/tree/main (**PRIVATE**)
 
